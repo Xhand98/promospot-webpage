@@ -1,0 +1,30 @@
+.style-text {
+  text-align: center;
+  color: #fbdb18;
+}
+
+.container-all > p {
+  color: #232;
+}
+
+.img-all {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+     minmax(
+      150px,
+       1fr
+       )
+       );
+}
+
+.img-all img {
+  width: 200px; /* Ancho deseado para las imágenes */
+  height: 300px; /* Altura deseada para las imágenes */
+  border-radius: 24px; /* Añade borde redondeado */
+  border: 2px solid; /* Añade borde con color amarillo */
+}
+
+.img-all {
+  place-items: center;
+}
