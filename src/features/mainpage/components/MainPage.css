@@ -13,21 +13,21 @@
   color: #fbdb18;
 }
 
-.Img {
+.grid-container {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: center;
+}
+
+/* Define grid items */
+.grid-item {
+  margin: 10px; /* Adjust spacing between grid items */
+}
+
+/* Make images responsive */
+.grid-item {
+  width: 450px;
   height: auto;
-}
-
-.Img .carrito {
-  width: 600px;
-  height: 400px;
-}
-
-.Img .precio {
-  width: 600px;
-  height: 400px;
+  display: block;
 }
 
 @media (max-width: 400px) {
@@ -71,9 +71,8 @@
 }
 
 .pagechoice {
-  margin-left: 25cqw;
-  height: 45px;
-  align-content: center;
+  height: 40px;
+  display: flex;
 }
 
 .pagechoice a:not(.activo) {
@@ -88,6 +87,7 @@
 
 .activo {
     list-style-type: none;
+    
     display: inline-block;
     margin-right: 20px;
     background-color: #a26b06;
@@ -96,7 +96,6 @@
     border-radius: 0.5rem;
     width: 150px;
     height: 30px;
-    margin-bottom: -20px;
     font-size: 1rem;
     cursor: pointer;
     font-family: Inter;
@@ -106,15 +105,12 @@
 
 .pagechoice li:hover{
     list-style-type: none;
-    display: inline-block;
-    margin-right: 20px;
     background-color: #a26b06;
     color: #fefdc3;
     border: none;
     border-radius: 0.5rem;
     width: 150px;
     height: 30px;
-    margin-bottom: -20px;
     font-size: 1rem;
     cursor: pointer;
     font-family: Inter;
@@ -123,15 +119,11 @@
 
 .activo:hover {
     list-style-type: none;
-    display: inline-block;
-    margin-right: 20px;
     background-color: #fefdc3;
     color: #fbdb18;
-    border: none;
     border-radius: 0.5rem;
     width: 150px;
     height: 30px;
-    margin-bottom: -20px;
     font-size: 1rem;
     cursor: pointer;
     font-family: Inter;
