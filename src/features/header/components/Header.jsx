@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,7 @@ import SearchToggle from './SearchToggle'
 
 
 
-const Header = () => {
+const Header = ({children}) => {
  
 
   var logo1 = (
@@ -51,6 +51,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faFacebook} />
             </i>
           </a>
+      {children}
         </div>
       </div>
     </header>
