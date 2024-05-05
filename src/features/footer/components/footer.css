@@ -9,13 +9,16 @@ body {
 }
 
 footer {
-    background: rgba(255, 195, 152, 0.867);
+    background: linear-gradient(315deg,  #a26b06, #cb9603 50%);
+    position: static;
+    bottom: 0;
     padding: 30px 20px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: black;
+    color: #422406;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -84,7 +87,7 @@ footer {
     content: ' ';
     width: 100%;
     height: 2px;
-    background-color: #3e3e3bb3;
+    background-color: #a26b06;
     margin-top: -30px;
     z-index: 10;
    }
