@@ -4,7 +4,11 @@ import img1 from '/1.png'
 import img2 from '/2.png';
 import ShowCase from "../../magazineshowcase/components/MagazineShowcase";
 
+import PageChoice from './PageChoice'
+
 let user = prompt("Ingrese su usuario:");
+
+
 
 function MainPage() {
   return (
@@ -30,7 +34,6 @@ function MainPage() {
             alt="Etiqueta de precio"
           />
         </div>
-        <ShowCase />
 
     </main>
   );
