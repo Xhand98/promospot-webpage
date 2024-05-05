@@ -13,31 +13,25 @@ const ShowCase = () => {
     <div className="container-all">
       <div className="style-text">
         <h2>Apartado para revistas</h2>
-        <br />
       </div>
       <div className="img-all">
         <div className="revistas-left">
-          <img src={img8} />
-          <p>Jumbo</p>
-          <CoolModal>
+          <img src={img8} alt="Jumbo" />
+          <CoolModal magTitle="Jumbo">
             <p>Proximamente...</p>
           </CoolModal>
           <br />
-          <a href="https://heyzine.com/flip-book/03edbe1bf0.html">
-            <img src={img9} />
-            <p>La Sirena</p>
-          </a>
-          <CoolModal>
+          <img src={img9} alt="La Sirena" />
+          <CoolModal magTitle="La Sirena">
             <p>Proximamente...</p>
           </CoolModal>
         </div>
 
         <div className="revistas-center">
           <a>
-            <img src={img4} />
-            <p>El Bravo</p>{" "}
+            <img src={img4} alt="El Bravo" />
           </a>
-          <CoolModal>
+          <CoolModal magTitle="El Bravo">
             <iframe
               title="Cool Iframe"
               allowFullScreen
@@ -51,10 +45,9 @@ const ShowCase = () => {
           </CoolModal>
           <br />
           <a>
-            <img src={img1} />
-            <p>Carrefour</p>{" "}
+            <img src={img1} alt="Carrefour" />
           </a>
-          <CoolModal>
+          <CoolModal magTitle="Carrefour">
             <iframe
               title="Cool Iframe"
               allowFullScreen
@@ -70,16 +63,13 @@ const ShowCase = () => {
           </CoolModal>
         </div>
         <div className="revistas-right">
-          <img src={img6} />
-          <p>El SuperPola</p>
-          <CoolModal>
+          <img src={img6} alt="El SuperPola" />
+          <CoolModal magTitle="SuperPola">
             <p>Proximamente...</p>
           </CoolModal>
-          <img src={img11} width="70px" heigth="85px" />
-
-          <p>El Nacional</p>
-          <CoolModal>
-          <iframe
+          <img src={img11} alt="El Nacional" className="nacional" />
+          <CoolModal magTitle="El Nacional">
+            <iframe
               title="Cool Iframe"
               allowFullScreen
               scrolling="no"
