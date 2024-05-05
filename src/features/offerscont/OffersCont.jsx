@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 const OffersCont = ({ imgSrc, imgAlt, linkRoute }) => {
   return (
     <div>
-      <article>
-        <img src={imgSrc} alt={imgAlt} className="offer-img" />
-        <Link to={linkRoute}>
-          {" "}
+      <Link to={linkRoute}>
+        <article>
+          <img src={imgSrc} alt={imgAlt} className="offer-img" />{" "}
           <p className="offer-title">Ver Ofertas</p>{" "}
-        </Link>
-      </article>
+        </article>
+      </Link>
     </div>
   );
 };
