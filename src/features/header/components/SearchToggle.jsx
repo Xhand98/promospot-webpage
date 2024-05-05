@@ -13,7 +13,7 @@ const SearchToggle = () => {
   return (
     <div className='searchtogglecont'>
       <button className={`searchtoggle ${isToggled ? 'active' : ''}`} onClick={toggleHandler}>
-        <FontAwesomeIcon icon={isToggled ? faX : faSearch} className={`icon ${isToggled ? 'active' : ''}`} />
+        <FontAwesomeIcon icon={isToggled ? faX : faSearch} className={`iconito ${isToggled ? 'active' : ''}`} />
       </button>
       {isToggled && <Searchbar />}
     </div>
