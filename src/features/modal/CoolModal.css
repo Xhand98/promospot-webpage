@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 .modal-background {
   position: fixed;
   top: 0;
@@ -59,3 +61,17 @@ img {
     transparent
   );
 } */
+
+.modalbutton {
+  background-color: #ebc107;
+  color: #422406;
+  border: none;
+  border-radius: .5rem;
+  width: 150px;
+  margin-left: 20px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  font-family: Inter;
+}
