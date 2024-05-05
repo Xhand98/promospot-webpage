@@ -27,7 +27,7 @@ article {
     font-weight: 600;
     font-family: system-ui  ;
     scroll-behavior: smooth;
-    z-index: 998;
+    z-index: 99998;
 }
 
 .chatbot {

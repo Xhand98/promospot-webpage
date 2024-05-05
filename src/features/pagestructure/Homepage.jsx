@@ -8,7 +8,7 @@ import MainPage from "../mainpage/components/MainPage.jsx";
 
 function HomePage() {
   return (
-    <div>
+    <div className="mainPage">
       <Header />
       <MainPage />
       <Sidetab id="neNTaGfQ" buttonText="click to open" />

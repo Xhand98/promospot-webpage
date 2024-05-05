@@ -1,25 +1,25 @@
-.offer-img {
-  width: 400px;
-  height: 400px;
-  aspect-ratio: 1 / 1
-}
+  .offer-img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1 / 1;
+  }
 
-.offer-title {
-  width: 400px;
-  height: 45px;
-  text-align: center;
-  color: #232;
-  background-color: #ededed;
-}
+  .offer-title {
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    color: #232;
+    background-color: #ededed;
+  }
 
-.off-page {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fit,
-       minmax(
-        150px,
-         1fr
-         )
-         );
-         place-items: center;
-}
+  .off-page {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+          150px,
+          1fr
+          )
+          );
+          place-items: center;
+  }

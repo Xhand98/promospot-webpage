@@ -9,16 +9,19 @@ const OffersPage = () => {
     return(
         <div className='off-page'>
             <OffersCont
+            linkRoute={"/"}
             imgSrc={img1}
-            imgAlt={"SAD"}
+            imgAlt={"Anuncio la Sirena"}
             />
             <OffersCont
+            linkRoute={"/"}
             imgSrc={img2}
-            imgAlt={"SAD"}
+            imgAlt={"Anuncio el Nacional"}
             />
             <OffersCont
+            linkRoute={"/"}
             imgSrc={img3}
-            imgAlt={"SAD"}
+            imgAlt={"Anuncio Bravo"}
             />
         </div>
     )    
