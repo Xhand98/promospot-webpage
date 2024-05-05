@@ -3,38 +3,14 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import {
-  faYoutube,
-  faInstagram,
-  faFacebookF,
-} from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram, faFacebook, } from "@fortawesome/free-brands-svg-icons";
 import logo from "/logo.png";
+import SearchToggle from './SearchToggle'
 
-const Searchbar = () => {
-  return (
-    <input
-      type="text"
-      placeholder="¿Que buscas?"
-      className="buscador"
-      id="searchbar"
-      onKeyDown={handleKeyPress}
-    />
-  );
-};
+
 
 const Footer = () => {
-  const handleKeyPress = (event) => {
-    var barra = document.getElementById("searchbar");
-
-    var barravalue = barra.value;
-
-    if (event.key === "Enter") {
-      event.preventDefault();
-
-      console.log(barravalue);
-      alert(`No hemos encontrado ${barravalue}`);
-    }
-  };
+ 
 
   var logo1 = (
     <img
@@ -96,8 +72,7 @@ const Footer = () => {
 
       <div className="searchcont">
         <div className="iconcont">
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-          <Searchbar />
+          <SearchToggle />
           <a href="">
             <i>
               <FontAwesomeIcon icon={faYoutube} />
@@ -110,7 +85,7 @@ const Footer = () => {
           </a>
           <a href="">
             <i>
-              <FontAwesomeIcon icon={faFacebookF} />
+              <FontAwesomeIcon icon={faFacebook} />
             </i>
           </a>
         </div>
