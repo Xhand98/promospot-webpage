@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <ul>
                 <li><p>PromoSpot <sup>__</sup> 2024 <sup>__</sup> <Link to='/Copyright'>Copyright {String.fromCodePoint(169)}</Link>  all rights reserved</p></li> 
-                <li><p> <Link to='/farm'>Link temporal </Link></p></li> 
+
             <div className="espacio1"></div>
             </ul>
         </footer>
