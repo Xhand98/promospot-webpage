@@ -9,6 +9,7 @@
 body {
   background-color: #fefdf9;
   margin: 0;
+  width: 100%; /*Linea numero 999 CSS*/
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
