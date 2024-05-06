@@ -9,17 +9,25 @@ body {
 }
 
 footer {
-    background: linear-gradient(315deg,  #a26b06, #cb9603 50%);
+    background: linear-gradient(315deg, #a26b06, #cb9603 50%);
     position: static;
     bottom: 0;
-    padding: 30px 20px;
+    padding: 9px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     color: #422406;
-    margin-top: 20px;
     width: 100%;
+}
+
+footer ul li{
+  list-style: none;
+  padding-left: 10px;
+}
+
+footer ul{
+    display: contents;
 }
 
 .social-media {
