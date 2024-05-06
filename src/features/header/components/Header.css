@@ -1,4 +1,3 @@
-/* Definición de variables CSS */
 :root {
   --main-color: #fefdf9; /* Color principal */
 }
@@ -106,9 +105,9 @@ header {
   font-size: 36px;
 }
 
-.btn-nav::after {
+.main-header::after {
   content: "";
-  width: 98.7vw; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
   height: 2px;
   background: #000;
   position: absolute;
@@ -152,7 +151,7 @@ header {
 .searchtoggle > .iconito {
   width: 25px;
   color: #ebc107;
-  mask-image: border: 2px solid black;
+  border: 2px solid black; /* Corrected mask-image */
   height: 25px;
 }
 
@@ -168,53 +167,6 @@ header {
   display: flex;
   margin-right: 20px;
 }
-
-/* Media queries for responsiveness */
-@media only screen and (max-width: 1200px) {
-  .navigation {
-    display: none; /* Hide navigation on smaller screens */
-  }
-
-  #btn-nav {
-    display: block; /* Show navigation toggle button */
-  }
-
-  .pageName {
-    left: 50%; /* Center page name */
-    transform: translateX(-50%);
-  }
-
-  .searchcont {
-    padding-left: 0; /* Reset padding */
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .navigation {
-    display: none; /* Hide navigation on smaller screens */
-  }
-
-  #btn-nav {
-    display: block; /* Show navigation toggle button */
-  }
-
-  .pageName {
-    left: 50%; /* Center page name */
-    transform: translateX(-50%);
-  }
-
-  .searchcont {
-    padding-left: 0; /* Reset padding */
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  /* Adjust styles for smaller screens */
-  .logo {
-    margin-left: 20px; /* Adjust as needed */
-  }
-}
-
 .pagechoicecont {
   display: flex;
   align-items: center;
@@ -222,4 +174,83 @@ header {
 
 .pagechoicecont li {
   align-content: center;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 900px) {
+  .logo {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+  
+  .pageName {
+    left: 130px; /* Adjust left position */
+    font-size: 24px; /* Adjust font size */
+  }
+  
+  .btn-nav {
+    font-size: 24px; /* Adjust font size */
+    padding: 6.5px 10px; /* Adjust padding */
+  }
+  
+  
+  
+  .pagechoicecont {
+    height: 30px;
+    margin-top: -18px;
+    margin-right: 10px; /* Adjust margin */
+  }
+
+  .pagechoice li {
+    width: 75px;
+    font-size: .5rem;
+    height: 15px;
+    margin-top: 2px;
+  }
+  .pagechoice li:hover {
+    width: 75px;
+    font-size: .5rem;
+    height: 15px;
+    margin-top: 2px;
+  }
+
+  .activo {
+    width: 75px;
+    font-size: .5rem;
+    height: 15px;
+  }
+
+  .activo:hover {
+    width: 75px;
+    font-size: .5rem;
+    height: 15px;
+  }
+
+  .iconcont > a {
+    font-size: 1rem;
+  }
+
+  .iconcont > .searchtogglecont > .searchtoggle > i {
+    font-size: 1rem;
+  }
+
+  .searchcont {
+    height: 70px;
+  }
+
+  .pagechoicecont {
+    display: flex;
+    flex-direction: column;
+  }
+  .pagechoice {
+    width: 75px;
+    font-size: .5rem;
+  }
+
+  .iconcont {
+    height: 70px;
+  }
+
+  .off-page {
+    margin-top: 80px;
+  }
 }
