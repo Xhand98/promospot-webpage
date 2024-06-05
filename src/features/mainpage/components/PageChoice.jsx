@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../../../App.css"
 
 const PageChoice = () => {
   return (
     <div className="pagechoice">
-      <ul>
-        <li><NavLink
+      <ul className="pagechoicecont">
+        <li className=""><NavLink
           
           to="/"
           className={({ isActive, isPending }) =>
@@ -14,7 +15,7 @@ const PageChoice = () => {
         >
           Pagina Principal
         </NavLink></li>
-        <li><NavLink
+        <li className=""><NavLink
           
           to="/farm"
           className={({ isActive, isPending }) =>
@@ -23,23 +24,23 @@ const PageChoice = () => {
         >
           Farmacias
         </NavLink></li>
-        <li><NavLink
+        <li className=""><NavLink
           
-          to="/"
+          to="/Cine"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "activo" : ""
           }
         >
-          Moda
+          Cine
         </NavLink></li>
-        <li><NavLink
+        <li className=""><NavLink
           
           to="/offers"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "activo" : ""
           }
         >
-          Super
+          SuperMercados
         </NavLink></li>
       </ul>
     </div>

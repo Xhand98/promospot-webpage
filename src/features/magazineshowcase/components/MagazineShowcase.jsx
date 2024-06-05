@@ -23,7 +23,16 @@ const ShowCase = () => {
           <br />
           <img src={img9} alt="La Sirena" />
           <CoolModal magTitle="La Sirena">
-            <p>Proximamente...</p>
+          <iframe
+              title="Cool Iframe"
+              allowFullScreen
+              style={{
+                border: "1px solid lightgray",
+                width: "600px",
+                height: "600px",
+              }}
+              src="https://heyzine.com/flip-book/217fc689ca.html"
+            ></iframe>
           </CoolModal>
         </div>
 
@@ -65,7 +74,16 @@ const ShowCase = () => {
         <div className="revistas-right">
           <img src={img6} alt="El SuperPola" />
           <CoolModal magTitle="SuperPola">
-            <p>Proximamente...</p>
+          <iframe
+              title="Cool Iframe"
+              allowFullScreen
+              style={{
+                border: "1px solid lightgray",
+                width: "600px",
+                height: "600px",
+              }}
+              src="https://heyzine.com/flip-book/bb5e685b5e.html"
+            ></iframe>
           </CoolModal>
           <img src={img11} alt="El Nacional" className="nacional" />
           <CoolModal magTitle="El Nacional">
@@ -79,11 +97,12 @@ const ShowCase = () => {
                 width: "600px",
                 height: "600px",
               }}
-              src="https://heyzine.com/flip-book/4a689cdafe.html"
+              src="https://heyzine.com/flip-book/d196b9d2d8.html"
             />
           </CoolModal>
         </div>
       </div>
+      <br />
     </div>
   );
 };

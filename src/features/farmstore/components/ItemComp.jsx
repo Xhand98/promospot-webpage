@@ -1,18 +1,18 @@
 import React from 'react';
 
-const Product = ({ imgSrc, productName, precio, oferta }) => {
+const Product = ({ imgSrc, productName, precio, oferta, farmLink }) => {
   return (
     <div className="productos">
       <figure>
         <img src={imgSrc} alt={productName} />
       </figure>
+      <a href={farmLink}>
       <div className="contenido">
         <h3>{productName}</h3>
         <br />
-        <p>Precio: {precio}</p>
         <br />
-        <p>Oferta: {oferta}</p>
       </div>
+    </a>
     </div>
   );
 };

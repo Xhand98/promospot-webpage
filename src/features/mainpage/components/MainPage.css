@@ -30,22 +30,16 @@
   display: block;
 }
 
-@media (max-width: 400px) {
-  * {
-    margin: 0;
-    padding: 0;
+/* Media query for responsiveness */
+@media only screen and (max-width: 1285px) {
+  .grid-container {
+    flex-direction: column; /* Change to a column layout */
+    align-items: center; /* Center items vertically */
   }
-  .Img {
-    display: grid;
-  }
-  .Img .carrito {
-    width: 470px;
-    height: 300px;
-    border-radius: 1%;
-  }
-  .Img .precio {
-    width: 470px;
-    height: 300px;
+  
+  .grid-item {
+    width: 100%; /* Make grid items occupy full width */
+    max-width: 450px; /* Set maximum width for grid items */
   }
 }
 
@@ -87,7 +81,6 @@
 
 .activo {
     list-style-type: none;
-    
     display: inline-block;
     margin-right: 20px;
     background-color: #a26b06;

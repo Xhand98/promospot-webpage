@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const OffersCont = ({ imgSrc, imgAlt, linkRoute }) => {
   return (
     <div>
-      <Link to={linkRoute}>
+      <Link to={linkRoute} target="_blank">
         <article>
           <img src={imgSrc} alt={imgAlt} className="offer-img" />{" "}
           <p className="offer-title">Ver Ofertas</p>{" "}

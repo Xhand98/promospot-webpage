@@ -1,5 +1,5 @@
 :root {
-  --main-color: #fefdf9; /* Color principal */
+  --main-color: #fffeee; /* Color principal */
 }
 
 header {
@@ -8,7 +8,7 @@ header {
 
 /* Estilos para el encabezado principal */
 .main-header {
-  background: var(--main-color); /* Fondo del encabezado */
+  background: chocolate; /* Fondo del encabezado */
   height: 50px; /* Altura */
 }
 
@@ -19,6 +19,10 @@ header {
 /* Estilos para elementos de la lista de navegación */
 .navigation li {
   list-style: none; /* Quita los marcadores de lista */
+}
+
+img.logo {
+  margin-top: 5px;
 }
 
 /* Estilos para submenú */
@@ -91,17 +95,16 @@ header {
 }
 
 .logo {
-  width: 50px;
+  width: 60px;
   height: auto;
-  margin-left: 60px;
+  margin-left: 5px;
 }
 
 .pageName {
   display: inline;
   position: absolute;
   top: 5px;
-  left: 130px;
-  color: #000;
+  color: var(--main-color);
   font-size: 36px;
 }
 

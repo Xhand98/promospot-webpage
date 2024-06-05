@@ -17,14 +17,14 @@ const OfferComp = ({
       <div className="mainpart">
           <img src={imgSrc} alt={offName} />
         <div className="offinfo">
-          <p className="offdetails">{offDetails}</p>
+          <p className="offdetailsz">{offDetails}</p>
           <ColorButton color={btnColor}>Información</ColorButton>
         </div>
       </div>
       <div className="secpart">
-        <h3>Oferta</h3>
+        <h3 className="divi">Condiciones</h3>
         <div className="divisor"></div>
-        <ul>
+        <ul className="dislist">
           <li>{disOne}</li>
           <li>{disTwo}</li>
           <li>{disThree}</li>

@@ -12,6 +12,7 @@ import OfferDisplay1 from "../features/offersmod/OfferDisplay1.jsx";
 import OfferDisplay2 from "../features/offersmod/OfferDisplay2.jsx";
 import OfferDisplay3 from "../features/offersmod/OfferDisplay3.jsx";
 import OfferDisplay4 from "../features/offersmod/OfferDisplay4.jsx";
+import CineDisplay from "../features/Cine/CineDisplay.jsx";
 
 function Routing() {
   return (
@@ -26,6 +27,7 @@ function Routing() {
         <Route path="/modal" element={<CoolModal />} />
         <Route path="/farm" element={<FarmStore />} />
         <Route path="/cb" element={<Chatbot />} />
+        <Route path="/Cine" element={<CineDisplay />} />
         <Route path="/offers/BECENSE" element={<OfferDisplay1 />} />
         <Route path="/offers/Bravo" element={<OfferDisplay2 />} />
         <Route path="/offers/Sirena" element={<OfferDisplay3 />} />

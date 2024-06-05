@@ -46,15 +46,15 @@ const Chatbot = () => {
     const getMessageById = (id) => {
         switch (id) {
             case 1:
-                return `<div class="bot-response"><span class="bot-name">🤖Robó</span><p class='agregado'><i class="fa-solid fa-robot icon"></i>></i> Saludos</p></div>`;
+                return `<div className="bot-response"><span className="bot-name">🤖Robó</span><p className='agregado'><i className="fa-solid fa-robot icon"></i>></i> Saludos</p></div>`;
             case 2:
-                return `<div class="bot-response"><span class="bot-name">🤖Robó</span><p class='agregado'><i class="fa-solid fa-robot icon"></i>></i> Bye, Bye.</p></div>`;
+                return `<div className="bot-response"><span className="bot-name">🤖Robó</span><p className='agregado'><i className="fa-solid fa-robot icon"></i>></i> Bye, Bye.</p></div>`;
             case 3:
-                return `<div class="bot-response"><span class="bot-name">🤖Robó</span><p class='agregado'><i class="fa-solid fa-robot icon"></i>></i> Bien, y tú?</p></div>`;
+                return `<div className="bot-response"><span className="bot-name">🤖Robó</span><p className='agregado'><i className="fa-solid fa-robot icon"></i>></i> Bien, y tú?</p></div>`;
             case 4:
-                return `<div class="bot-response"><span class="bot-name">🤖Robó</span><p class='agregado'><i class="fa-solid fa-robot icon"></i>></i> Vua chaval, que epico</p></div>`;
+                return `<div className="bot-response"><span className="bot-name">🤖Robó</span><p className='agregado'><i className="fa-solid fa-robot icon"></i>></i> Vua chaval, que epico</p></div>`;
             default:
-                return `<div class="bot-response"><span class="bot-name">🤖Robó</span><p class='agregado'><i class="fa-solid fa-robot icon"></i>></i> No tengo respuesto para esta consulta. :(</p></div>`;
+                return `<div className="bot-response"><span className="bot-name">🤖Robó</span><p className='agregado'><i className="fa-solid fa-robot icon"></i>></i> No tengo respuesto para esta consulta. :(</p></div>`;
         }
     };
 

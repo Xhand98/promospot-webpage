@@ -25,7 +25,7 @@ function CoolModal({ children, magTitle }) {
         <div className={`modal-background ${isClosing ? 'fadeOut' : 'fadeIn'}`} onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             {children}
-            <button onClick={closeModal} className='modalbutton'>Close</button>
+            <button onClick={closeModal} className='modalbutton' id='modalbutton'>Close</button>
           </div>
         </div>
       )}
